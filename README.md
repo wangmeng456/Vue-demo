@@ -1,4 +1,4 @@
-# ai-shop
+# Vue-demo
 
 ## Project setup
 ```
