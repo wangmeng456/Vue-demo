@@ -84,7 +84,7 @@
 </template>
 
 <script>
-import { mergeTableRow } from './merge';
+import { mergeTableRow } from '@/utils/merge';
 export default {
   name: 'home',
   data() {
