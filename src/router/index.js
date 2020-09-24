@@ -40,6 +40,11 @@ const constantRoutes = [
     path: '/',
     component: () => import('@/views/index.vue'),
     name: '首页',
+  },
+  {
+    path: '/tabModule',
+    component: () => import('@/views/tabModule/index.vue'),
+    name: '滚动吸顶',
   }
 ]
 

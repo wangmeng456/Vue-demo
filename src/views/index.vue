@@ -63,7 +63,7 @@
     @cell-mouse-leave="cellMouseLeave"  
     @cell-mouse-enter="cellMouseEnter" 
     :data="tableData" 
-    style="width: 80%;margin:0 auto;"
+    style="width: 100%;"
   )
     el-table-column(label="商品类别" align="center")
       template(slot-scope="scope" width="160")
@@ -79,7 +79,8 @@
         p {{scope.row.operator}}
     el-table-column(prop="updateTime" label="更新时间" align="center")
 
-    //- ****   aaa   **** -//
+    //- ****   vue组件之自定义tab切换组件(吸顶、滚动定位)等效果   **** -//
+  el-button(type="submit" @click="tabModule") 滚动吸顶
 </template>
 
 <script>
@@ -366,6 +367,12 @@ export default {
       console.log({row, column, cell, event});
       this.rowIndex = '-1'
       this.hoverOrderArr = [];
+    },
+
+    tabModule() {
+      this.$router.push({
+        path: '/tabModule'
+      })
     }
   }
 }
