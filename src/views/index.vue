@@ -87,6 +87,9 @@
 
   //- ****  vue模拟登陆校验  **** -//
   el-button(type="submit" @click="handleLogin") 登陆
+
+  //- ****  vue图表  **** -//
+  el-button(type="submit" @click="handleChart") 图表
 </template>
 
 <script>
@@ -392,6 +395,12 @@ export default {
         path: '/logins'
       })
     },
+
+    handleChart() {
+      this.$router.push({
+        path: '/chart'
+      })
+    }
   }
 }
 </script>

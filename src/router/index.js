@@ -55,6 +55,11 @@ const constantRoutes = [
     path: '/logins',
     component: () => import('@/views/login/index.vue'),
     name: '登陆'
+  },
+  {
+    path: '/chart',
+    component: () => import('@/views/chart/index.vue'),
+    name: '图表'
   }
 ]
 
