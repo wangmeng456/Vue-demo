@@ -79,8 +79,11 @@
         p {{scope.row.operator}}
     el-table-column(prop="updateTime" label="更新时间" align="center")
 
-    //- ****   vue组件之自定义tab切换组件(吸顶、滚动定位)等效果   **** -//
+  //- ****   vue组件之自定义tab切换组件(吸顶、滚动定位)等效果   **** -//
   el-button(type="submit" @click="tabModule") 滚动吸顶
+
+  //- ****  vue缩略图、预览  **** -//
+  el-button(type="submit" @click="drawPreview") 缩略图预览
 </template>
 
 <script>
@@ -372,6 +375,12 @@ export default {
     tabModule() {
       this.$router.push({
         path: '/tabModule'
+      })
+    },
+
+    drawPreview() {
+      this.$router.push({
+        path: '/drawPreview'
       })
     }
   }

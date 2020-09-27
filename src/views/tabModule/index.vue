@@ -1,3 +1,6 @@
+<!--
+  vue组件之自定义tab切换组件(吸顶、滚动定位)等效果
+-->
 <template>
   <div>
     <div class="div__header"></div>

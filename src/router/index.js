@@ -45,6 +45,11 @@ const constantRoutes = [
     path: '/tabModule',
     component: () => import('@/views/tabModule/index.vue'),
     name: '滚动吸顶',
+  },
+  {
+    path: '/drawPreview',
+    component: () => import('@/views/drawPreview/index.vue'),
+    name: '缩略图预览'
   }
 ]
 
