@@ -84,6 +84,9 @@
 
   //- ****  vue缩略图、预览  **** -//
   el-button(type="submit" @click="drawPreview") 缩略图预览
+
+  //- ****  vue模拟登陆校验  **** -//
+  el-button(type="submit" @click="handleLogin") 登陆
 </template>
 
 <script>
@@ -382,7 +385,13 @@ export default {
       this.$router.push({
         path: '/drawPreview'
       })
-    }
+    },
+
+    handleLogin() {
+      this.$router.push({
+        path: '/logins'
+      })
+    },
   }
 }
 </script>
